@@ -1,0 +1,136 @@
+.home-section{
+    position: relative;
+    text-align: center;
+}
+.home-section .container {
+    position: absolute;  top: 60px; left: 310px;
+    margin: auto;
+    padding: 30px; width: 50%;
+}
+.home-section .container h1 {
+    font-size: 40px; font-weight: 700;
+}
+#display-options{
+    display: grid; grid-template-columns: repeat(3,1fr);
+}
+#display-options .card{
+    width: 20rem; height: 28rem;
+    margin: 20px auto; 
+}
+#display-options .card img {
+    width: 15rem; float: center;
+    margin: auto; padding: 10px 20px;
+}
+#services{
+    display: grid; grid-template-columns: repeat(3,1fr);
+}
+#services .card {
+    width: 18rem; margin: 20px auto;
+    transition: all 0.3s linear;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+#services .card:hover{
+    background-color: #eee;
+}
+#services .card img  {
+    width: 70px; margin: auto; padding: 10px;
+}
+#reviews{
+    margin-right:60px ;
+    margin: auto;
+}
+#reviews .card{
+    width: 16rem;
+    margin: 10px auto;
+    border-radius: 25px;
+    transition: all 0.3s linear;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#reviews .card:hover {
+    background-color: #eee;
+}
+.rate-img {
+    width: 90px;
+}
+#user-img{
+    width: 60px; margin: auto;padding: 5px;
+}
+#form-containetr{
+    width: 37%; border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: auto;
+}
+#message-input{
+    height: 150px;
+}
+form .btn {
+    margin: 0px 130px;
+}
+.list-inline li {
+    font-size: 22px; text-align: center; margin: auto;
+}
+@media (max-width: 600px){
+    .home-section .container {
+        position: absolute;  top: 0px; left: 0px;
+        margin: auto;padding: auto; width: 100%;
+    }
+    .home-section img {
+        height: 400px; width: 100px;
+    }
+    .home-section .container h1 {
+        font-size: 30px; font-weight: 700;
+    }
+    #display-options{
+        display: grid; grid-template-columns: repeat(1,1fr);
+    }
+    #display-options .card{
+        width: 19rem; height: 27rem;margin: 10px auto; 
+    }
+    #services{
+        display: grid; grid-template-columns: repeat(1,1fr);
+    }
+    .reviews-section{
+        flex-direction: column;
+    }
+    #form-containetr{
+        padding: 0px;width: 100%;
+    }
+    form .btn {
+        margin: 0px 100px;
+    }
+  
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    .home-section .container {
+        position: absolute;  top: 70px; left: 33px;
+        margin: auto;padding: auto; width: 100%;
+    }
+    .home-section img {
+        height: 450px; width: 100px;
+    }
+    #display-options{
+        display: grid; grid-template-columns: repeat(2,1fr);
+    }
+    #services{
+        display: grid; grid-template-columns: repeat(2,1fr);
+    }
+    .reviews-section{
+        flex-direction: column;
+    }
+    #form-containetr{
+        padding: 0px;width: 100%;
+    }
+    form .btn {
+        margin: 0px 290px;
+    }
+    #reviews{
+        margin: 20px 0px;
+        display: grid; grid-template-columns: repeat(3,1fr);
+    }
+    #reviews .card{
+        width: 14rem; height: 18rem;
+        margin: auto; margin: 5px;
+    }
+}

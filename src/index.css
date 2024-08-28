@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#container{
+  display: grid; grid-template-columns: repeat(2,1fr);
+  margin: auto; 
+ column-gap: 20px; row-gap: 20px;
+}
+#container .card {
+  margin:auto;
+  transition: all 0.2s ease-in-out;
+}
+#container .card:hover {
+  transform: translateY(-10px);
+}
+#container img {
+  height: 100%;
+}
+#loadingIcon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem; 
+  color: #000; 
+}
+.sold-out{
+  position: absolute;
+}
+#sold-style{
+  position: relative;
+}
+#property img{
+  height: 430px; width: 50%; padding: 40px;
+}
+@media (max-width: 600px){
+  #container{
+    display: grid; grid-template-columns: repeat(1,1fr);
+    margin: auto; column-gap: 0px; row-gap: 0px;
+  }
+  #container .card {
+    margin:10px auto;
+  }
+  #container img {
+    width:100%; height: 210px;
+  }
+  #property{
+    flex-direction: column;
+  }
+  #property img{
+    width: 90%; height: 300px;
+    padding: 0px; margin: auto;
+  }
+  #contacts{
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px){
+  #container{
+    display: grid; grid-template-columns: repeat(1,1fr);
+    margin: auto; column-gap: 0px; row-gap: 5px;
+  }
+  #container .card {
+    margin:10px auto;
+  }
+  #container img {
+    width:100%;
+  }
+  #property{
+    flex-direction: column;
+  }
+  #property img{
+    width: 80%; height: 400px;
+    padding: 0px; margin: auto;
+  }
+  #contacts{
+    flex-wrap: wrap;
+  }
+}
