@@ -11,7 +11,7 @@ export default function Property() {
         fetch(`https://run.mocky.io/v3/${key}`)
             .then((res) => res.json())
             .then((data) => {
-                const foundProperty = data.find(item => item.property_id == id);
+                const foundProperty = data.find(item => item.property_id === id);
                 if (foundProperty) {
                     setProperty(foundProperty);
                 }
@@ -27,7 +27,7 @@ export default function Property() {
 
     useEffect(() => {
         const keys = [
-            'eec7ac21-1fb4-4f64-9da0-1c552b6ec581', // rechange home key api
+            'c93aae39-b77f-4a47-82c8-453ca973ddde', // rechange home key api
             '820156ff-8df2-49f5-a305-355b57929f7c', // rechange rent key api
             'b1e96e86-146f-45b7-8d86-cd206d52abf3' // rechange sell key api
         ];
