@@ -27,7 +27,7 @@ export default function Property() {
 
     useEffect(() => {
         const keys = [
-            'c93aae39-b77f-4a47-82c8-453ca973ddde', // rechange home key api
+            'eefcfaf7-6518-4e33-8b26-854df7d4fb51', // rechange home key api
             '820156ff-8df2-49f5-a305-355b57929f7c', // rechange rent key api
             'b1e96e86-146f-45b7-8d86-cd206d52abf3' // rechange sell key api
         ];
