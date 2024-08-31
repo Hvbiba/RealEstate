@@ -28,8 +28,8 @@ export default function Property() {
     useEffect(() => {
         const keys = [
             'b533b4c7-dc5a-44d6-9e5d-61f098ca1b6f', // rechange home key api
-            '8ef0c379-2fa9-4d02-9721-93e3d50274de',
-            '28a1146c-340e-4dd5-9fc3-d35c82402339'
+            '084c1036-baab-44f4-8ef6-14ec3a5d519a', // rechange rent key api
+            'c641b201-8f38-4a9d-99ca-c23288f5e3aa' // rechange sell key api
         ];
 
         for (const key of keys) {
