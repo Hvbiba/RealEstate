@@ -7,7 +7,7 @@ function Buy() {
     const navigate = useNavigate(); // To navigate to the Property page
 
     async function fetchData() {
-         const url = 'https://run.mocky.io/v3/eec7ac21-1fb4-4f64-9da0-1c552b6ec581';
+         const url = 'https://run.mocky.io/v3/c93aae39-b77f-4a47-82c8-453ca973ddde';
          const options = {
             method: 'GET',
             headers: {
