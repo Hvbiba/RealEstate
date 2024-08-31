@@ -27,9 +27,9 @@ export default function Property() {
 
     useEffect(() => {
         const keys = [
-            'b533b4c7-dc5a-44d6-9e5d-61f098ca1b6f', // rechange home key api
-            '084c1036-baab-44f4-8ef6-14ec3a5d519a', // rechange rent key api
-            'c641b201-8f38-4a9d-99ca-c23288f5e3aa' // rechange sell key api
+            'eec7ac21-1fb4-4f64-9da0-1c552b6ec581', // rechange home key api
+            '820156ff-8df2-49f5-a305-355b57929f7c', // rechange rent key api
+            'b1e96e86-146f-45b7-8d86-cd206d52abf3' // rechange sell key api
         ];
 
         for (const key of keys) {
