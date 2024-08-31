@@ -8,7 +8,7 @@ function Rent(){
     const navigate = useNavigate();
 
     const fetchRentalData = async () => {
-        const url = 'https://run.mocky.io/v3/084c1036-baab-44f4-8ef6-14ec3a5d519a'; 
+        const url = 'https://run.mocky.io/v3/820156ff-8df2-49f5-a305-355b57929f7c'; 
         try {
             const response = await fetch(url);
             if (!response.ok) {
