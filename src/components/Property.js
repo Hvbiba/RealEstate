@@ -11,7 +11,7 @@ export default function Property() {
         fetch(`https://run.mocky.io/v3/${key}`)
             .then((res) => res.json())
             .then((data) => {
-                const foundProperty = data.find(item => item.property_id === id);
+                const foundProperty = data.find(item => item.property_id == id);
                 if (foundProperty) {
                     setProperty(foundProperty);
                 }
