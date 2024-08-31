@@ -7,13 +7,13 @@ function Buy() {
     const navigate = useNavigate(); // To navigate to the Property page
 
     async function fetchData() {
-        const url = 'https://run.mocky.io/v3/e44341d9-ca86-4bdc-a819-a25ea3e84f19';
-        const options = {
+         const url = 'https://run.mocky.io/v3/b533b4c7-dc5a-44d6-9e5d-61f098ca1b6f';
+         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': 'b2d63c3c9dmsh242a400ff5403edp13db23jsn5dfc46d56916',
-                'x-rapidapi-host': 'us-real-estate.p.rapidapi.com'
-            }
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+             }
         };
 
         try {
